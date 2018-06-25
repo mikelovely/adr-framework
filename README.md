@@ -1,9 +1,13 @@
 
-# Docker Boilerplate
+# A.D.R Framework
 
-### Included
+> A basic framework to showcase Action Domain Responder.
 
-- mysql
-- nginx
-- fpm
-- redis
+### Getting started
+
+All routes are listed in the `AppFactory::registerRoutes()` method ;)
+
+```
+- GET /posts
+- POST /posts
+```
