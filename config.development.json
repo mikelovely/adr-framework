@@ -1,0 +1,19 @@
+{
+  "debugging": {
+    "errors": true
+  },
+  "database": {
+    "mysql": {
+      "app": {
+        "master": {
+          "driver": "mysql",
+          "username": "root",
+          "password": "password",
+          "host": "docker-fresh-db",
+          "port": 3306,
+          "database": "app"
+        }
+      }
+    }
+  }
+}

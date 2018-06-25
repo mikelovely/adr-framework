@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  docker-fresh-fpm:
+    container_name: docker-fresh-fpm
+    build:
+      context: .
+      dockerfile: ./fpm/Dockerfile
+    volumes:
+      - ../:/opt/app
+      - ./fpm/php.ini:/usr/local/etc/php/php.ini
+
+    environment:
+      - DOCKER_FRESH_ENVIRONMENT=development
+
+networks:
+  default:
+    external:
+      name: environment_docker-fresh

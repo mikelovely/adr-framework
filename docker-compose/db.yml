@@ -1,0 +1,17 @@
+version: '3'
+services:
+
+  docker-fresh-db:
+    container_name: docker-fresh-db
+    image: mysql/mysql-server:5.7
+    environment:
+     - "MYSQL_DATABASE=app"
+     - "MYSQL_ROOT_PASSWORD=password"
+     - "MYSQL_ROOT_HOST=%"
+    ports:
+     - "33063:3306"
+
+networks:
+  default:
+    external:
+      name: environment_docker-fresh

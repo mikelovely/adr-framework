@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  docker-fresh-nginx:
+    container_name: docker-fresh-nginx
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    ports:
+      - "8033:80"
+    volumes:
+      - ../:/opt/app
+    environment:
+      - DOCKER_FRESH_ENVIRONMENT=development
+    external_links:
+      - docker-fresh-fpm
+
+networks:
+  default:
+    external:
+      name: environment_docker-fresh
