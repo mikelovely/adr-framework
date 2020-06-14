@@ -1,5 +1,5 @@
 {
-    "name": "Action Domain Responder",
+    "name": "mikelovely/adr-framework",
     "description": "An example Action Domain Responder framework.",
     "keywords": ["adr", "slim", "php"],
     "license": "MIT",
@@ -14,7 +14,7 @@
       "kint-php/kint": "^1",
       "phpunit/php-code-coverage": "^5.2",
       "phpunit/phpunit": "^6.3",
-        "mockery/mockery": "^1.1"
+      "mockery/mockery": "^1.1"
     },
     "autoload": {
       "psr-4": {
